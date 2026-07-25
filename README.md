@@ -35,6 +35,14 @@ The gated hidden state $H_{final}$ is then passed through a GRU cell for sequent
 
 ---
 
+#### 1. Volatility Case Study
+![Volatility Case Study](figure_1_1_spatial_anomaly_topology.png)
+*Figure 1: Time-series evaluation comparing actual solar power generation versus predicted outputs during localized cloud transient shocks.
+
+#### 1. Volatility Case Study
+![Volatility Case Study](figure_1_2_gated_routing_comparison.png)
+*Figure 1: Time-series evaluation comparing actual solar power generation versus predicted outputs during localized cloud transient shocks.
+
 ## Repository Architecture
 
 ```text
@@ -146,29 +154,26 @@ The master script automatically exports four publication-ready figures to the ro
 * `reviewer_plot_c_residuals.png`: Distribution boxplots of absolute prediction residuals ($|y - \hat{y}|$) across all evaluated benchmark architectures.
 * `reviewer_plot_d_convergence.png`: Training loss convergence trajectories over training epochs of proposed Gated T-GCN model.
 
-* ```
-  ### Generated Figures
-
 The master script automatically exports four publication-ready figures to visualize model performance, spatial decoupling behavior, and training dynamics.
 
 #### 1. Volatility Case Study
 ![Volatility Case Study](reviewer_plot_a_volatility.png)
-*Figure 1: Time-series evaluation comparing actual solar power generation versus predicted outputs during localized cloud transient shocks.*
+*Figure 1: Time-series evaluation comparing actual solar power generation versus predicted outputs during localized cloud transient shocks.
 
 ---
 
 #### 2. Identity Gate Activation Analysis
 ![Gate Activation Analysis](reviewer_plot_b_gate_analysis.png)
-*Figure 2: Dynamic inspection of feature-wise identity gate activations ($g$) demonstrating automated spatial decoupling during high-volatility events.*
+*Figure 2: Dynamic inspection of feature-wise identity gate activations ($g$) demonstrating automated spatial decoupling during high-volatility events.
 
 ---
 
 #### 3. Residual Distribution Analysis
 ![Residual Distribution](reviewer_plot_c_residuals.png)
-*Figure 3: Distribution boxplots of global absolute prediction residuals ($|y - \hat{y}|$) across all evaluated benchmark architectures.*
+*Figure 3: Distribution boxplots of global absolute prediction residuals ($|y - \hat{y}|$) across all evaluated benchmark architectures.
 
 ---
 
 #### 4. Training Convergence Trajectories
 ![Training Convergence](reviewer_plot_d_convergence.png)
-*Figure 4: Training loss convergence trajectories across training epochs for all neural network baselines.*
+*Figure 4: Training loss convergence trajectories across training epochs for all neural network baselines.
