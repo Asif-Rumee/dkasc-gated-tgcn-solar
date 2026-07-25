@@ -46,8 +46,8 @@ def main():
     
     models = {
         'Proposed Gated T-GCN': SequentialWrapper(4, hidden_dim, 'gated', sequence_length).to(device),
-        'A3T-GCN': SequentialWrapper(4, hidden_dim, 'a3tgcn', sequence_length).to(device),
         'Vanilla T-GCN': SequentialWrapper(4, hidden_dim, 'vanilla', sequence_length).to(device),
+        'A3T-GCN': SequentialWrapper(4, hidden_dim, 'a3tgcn', sequence_length).to(device),
         'Standard GCN': SequentialWrapper(4, hidden_dim, 'gcn', sequence_length).to(device),
         'Standard GRU': SequentialWrapper(4, hidden_dim, 'gru', sequence_length).to(device),
         'Historical Average': SequentialWrapper(4, hidden_dim, 'ha', sequence_length).to(device)
